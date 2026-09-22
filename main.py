@@ -8,7 +8,9 @@ phonebook = {
     "Jill" : 947662781
 }  
 # Your code goes here:
-
+phonebook.pop("Jill")
+phonebook["Jack"] = 938273443
+print(phonebook)
 
 
 
