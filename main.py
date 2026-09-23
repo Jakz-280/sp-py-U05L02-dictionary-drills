@@ -9,7 +9,7 @@ phonebook = {
 }  
 # Your code goes here:
 phonebook.pop("Jill")
-phonebook["Jack"] = 938273443
+phonebook["Jake"] = 938273443
 print(phonebook)
 
 
@@ -25,11 +25,28 @@ print(phonebook)
 # favHobbies (which contains a list as its value of your favourite hobbies)
 # likeCoding (which contains a bool, True if you like coding and False if you don’t like coding)
 # Then, print aboutMe
-
-
-
-
-
+Foods = [
+    "Grilled cheese",
+    "Pizza",
+    "White rice",
+    "Ground beef",
+]
+Hobbies = [
+    "Drawing",
+    "Coding",
+    "Crafting",
+]
+aboutMe = {
+    "name" : "Tylar",
+    "age" : 15,
+    "favFood" : Foods,
+    "hairColor" : "brown",
+    "favSubject" : "Programming",
+    "favSweet" : "Chocolate",
+    "favHobbies" : Hobbies,
+    "likeCoding" : True
+}
+print(aboutMe)
 
 
 
@@ -43,6 +60,15 @@ print(phonebook)
 # 5. favActivity (which contains the value of your pets favourite activity)
 # 5. favFood (which contains the value of your pets favourite food)
 
+myPet = {
+    "name" : "Gigi",
+    "breed" : "Toy poddle",
+    "age" : "6 years",
+    "noise" : "woof",
+    "favActivity" : "Playing",
+    "favFood" : "Chicken",
+}
+
 # Then do the following:
 # A. Print the dictionary
 # B. Print the value of breed using the breed key
@@ -50,9 +76,14 @@ print(phonebook)
 # D. Add one new key-value pair then print the dictionary
 # E. Print the length of your dictionary
 # F. Change the value of one existing value then print the dictionary
-
-
-
+print(myPet)
+print(myPet["breed"])
+myPet.pop("favFood")
+print(myPet)
+myPet["size"] = "small"
+print(len(myPet))
+myPet["favActivity"] = "walking"
+print(myPet)
 
 
 
@@ -65,7 +96,19 @@ print(phonebook)
 # D. Add one new key-value pair then print the dictionary
 # E. Print the length of your dictionary
 # F. Change the value of one existing value then print the dictionary
-
-
-
-
+heights = {
+    "Tylar" : "5ft 3in",
+    "Adiel" : "5ft 3in",
+    "Momina" : "5ft 3in",
+    "Aniya" : "5ft 5in",
+    "Leomar" : "5ft 9in"
+}
+print(heights)
+print(heights["Adiel"])
+heights.pop("Leomar")
+print(heights)
+heights["Terance"] = "5ft 9in"
+print(heights)
+print(len(heights))
+heights["Terance"] = "5ft 11in"
+print(heights)
